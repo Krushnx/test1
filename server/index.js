@@ -22,7 +22,7 @@ const app = express()
 //     console.log("DB Connected successfully");
 // })
 
-app.use(express.json())
+// app.use(express.json())
 
 mongoose.connect('mongodb+srv://contactnagare:7cnRMbOBIZdDIbYg@cluster0.xihnvek.mongodb.net/?retryWrites=true&w=majority');
 
