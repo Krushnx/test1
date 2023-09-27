@@ -17,7 +17,7 @@ mongoose.connect('mongodb+srv://contactnagare:7cnRMbOBIZdDIbYg@cluster0.xihnvek.
 
 
 app.get("/", (req, res) => {
-    res.json("port to Mono");
+    res.json("Samplw");
 })
 
 
