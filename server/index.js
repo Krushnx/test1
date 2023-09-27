@@ -12,15 +12,15 @@ const app = express()
 //     }
 // ));
 
-db.on('error' , (error)=>
-{
-    console.log(error);
-});
+// db.on('error' , (error)=>
+// {
+//     console.log(error);
+// });
 
-db.once('open' , ()=>
-{
-    console.log("DB Connected successfully");
-})
+// db.once('open' , ()=>
+// {
+//     console.log("DB Connected successfully");
+// })
 
 app.use(express.json())
 
@@ -29,10 +29,10 @@ mongoose.connect('mongodb+srv://contactnagare:7cnRMbOBIZdDIbYg@cluster0.xihnvek.
 const itemrouter = require('./routes/item');
 
 
-app.use(express.json());
+// app.use(express.json());
 
 
-app.use('/item', itemrouter);
+// app.use('/item', itemrouter);
 app.get("/", (req, res) => {
     res.json("Fucking work ??");
 })
