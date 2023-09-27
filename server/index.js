@@ -7,6 +7,7 @@ const app = express()
 
 mongoose.connect('mongodb+srv://contactnagare:7cnRMbOBIZdDIbYg@cluster0.xihnvek.mongodb.net/?retryWrites=true&w=majority');
 
+const itemrouter = require('../server/routes/item.js');
 
 app.use(express.json())
 
