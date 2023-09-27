@@ -13,7 +13,7 @@ const app = express()
 // ));
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://contactnagare:BWTm1ng4Vi9QJ09z@cluster0.wzhzr4h.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://contactnagare:7cnRMbOBIZdDIbYg@cluster0.xihnvek.mongodb.net/?retryWrites=true&w=majority');
 
 
 app.get("/", (req, res) => {
