@@ -11,13 +11,30 @@ const app = express()
 //         credentials: true
 //     }
 // ));
+
+db.on('error' , (error)=>
+{
+    console.log(error);
+});
+
+db.once('open' , ()=>
+{
+    console.log("DB Connected successfully");
+})
+
 app.use(express.json())
 
 mongoose.connect('mongodb+srv://contactnagare:7cnRMbOBIZdDIbYg@cluster0.xihnvek.mongodb.net/?retryWrites=true&w=majority');
 
+const itemrouter = require('./routes/item');
 
+
+app.use(express.json());
+
+
+app.use('/item', itemrouter);
 app.get("/", (req, res) => {
-    res.json("Samplw");
+    res.json("Fucking work ??");
 })
 
 
