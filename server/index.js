@@ -13,7 +13,7 @@ app.use(express.json())
 
 
 app.get("/", (req, res) => {
-    res.json("Fucking work ??");
+    res.json("Sorry for the bad lang");
 })
 
 
